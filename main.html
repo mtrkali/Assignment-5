@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A5-Dev-Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-200">
+    <header>
+        <nav>
+            <div class="nav-container flex items-center justify-between w-9/12 mx-auto bg-white p-2 rounded-lg my-5">
+                <div class="left-item flex items-center gap-1">
+                    <img class="w-8" src="assets/logo.png" alt="">
+                    <h3 class="text-3xl block">Dev <span class="font-bold">Board</span></h3>
+                </div>
+                <button id="back-btn" class="p-3 bg-blue-700 text-white font-bold text-sm rounded-lg">Back to
+                    Desk</button>
+            </div>
+        </nav>
+
+        <section class="hero w-9/12 mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">Blogs</h2>
+            <div class="blog-container">
+                <div class="blog flex flex-col gap-1 mt-5">
+                    <h3 class="text-2xl font-bold p-3 bg-white rounded-lg">Question-1: waht are the different ways to
+                        select an element in the DOM?</h3>
+                    <p class="text-2xl text-stone-500 p-3 bg-white rounded-lg">there  are 5 different way to select an element from  a webpage
+                        getElementById(''),getElementByTagName(''),getElementsByClassName(''),querySelector(''),querySelectorAll('');
+                    </p>
+                </div>
+                <div class="blog flex flex-col gap-1 mt-5">
+                    <h3 class="text-2xl font-bold p-3 bg-white rounded-lg">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+                    <p class="text-2xl text-stone-500 p-3 bg-white rounded-lg">innerHtml make an element with tag on the other hand innerText only make text without tag.
+                        textContent all time ignore html tags
+                    </p>
+                </div>
+                <div class="blog flex flex-col gap-1 mt-5">
+                    <h3 class="text-2xl font-bold p-3 bg-white rounded-lg">Question-3: What is event delegation in the DOM?</h3>
+                    <p class="text-2xl text-stone-500 p-3 bg-white rounded-lg">event delegate is a technuique when we set EventListener a parent element so that if happened an event of child element and then we can handle it. </p>
+                </div>
+                <div class="blog flex flex-col gap-1 mt-5">
+                    <h3 class="text-2xl font-bold p-3 bg-white rounded-lg">Question-4: What is event bubbling in the DOM?</h3>
+                    <p class="text-2xl text-stone-500 p-3 bg-white rounded-lg">when we click any child element then these event at first continue to child aflter his parent and after his parent are contunue;</p>
+                </div>
+                <div class="blog flex flex-col gap-1 mt-5">
+                    <h3 class="text-2xl font-bold p-3 bg-white rounded-lg">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+                    <p class="text-2xl text-stone-500 p-3 bg-white rounded-lg">1. i will create an element that document.createElement(tagname).innerHTML = `h1 hello world`;<br>
+                    then i will select parent div by the dcument.getElementById(idname) and will write . appendChild (tagname) <br>
+                after will write parenDIv.removeChild(newElement)</p>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <script>
+        document.getElementById('back-btn').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = "./index.html"
+        });
+
+    </script>
+</body>
+
+</html>
